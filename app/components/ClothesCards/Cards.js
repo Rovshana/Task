@@ -34,9 +34,7 @@ function Cards(props) {
               checkedIcon={<Favorite style={{ color: "red" }} />}
             />
           </FavIcon>
-          <RedDiv>
-            <span>Hizli Teslimat</span>
-          </RedDiv>
+          
           <Content>
             <ContentItem1>Lorem impsum dolar</ContentItem1>
             <Rating

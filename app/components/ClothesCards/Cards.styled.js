@@ -19,7 +19,7 @@ position: relative;
 
 export const FavIcon = styled.div`
 position: absolute;
-top: 130px;
+top: 230px;
 right: 0;
 left: 245px;
 background-color: white;
@@ -32,18 +32,17 @@ border-radius: 1000px 0px 0px 1000px;
 
 export const RedDiv = styled.div`
 position: absolute;
-top: 190px;;
-right: 245px;
+top: 0;
+right: 0;
 left: 0;
-bottom: 0px;
+
 width: 62px;
 height: 31px;
 left: 556px;
 top: 708px;
-
 background: #FF0000;
-border-radius: 2px 0px 0px 20px;
-transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
 `
 
 export const ContentItem1 = styled.span`

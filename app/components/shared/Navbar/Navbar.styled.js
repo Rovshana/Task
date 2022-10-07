@@ -75,6 +75,11 @@ font-size: 14px;
 line-height: 18px;
 color: #000000;
 margin-right: 36px;
+&:hover{
+    border-bottom: 1px solid #000000;
+    cursor: pointer;
+}
+
 
 `
 
