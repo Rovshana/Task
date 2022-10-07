@@ -1,13 +1,17 @@
 
 import React from 'react'
 import { CatagoryContainer, ListItem, Ul } from './HeaderCatagory.styled'
-
+import MenuIcon from '@mui/icons-material/Menu';
+import SubMenu from '../../SubMenu/SubMenu';
+import { useRouter } from 'next/router';
 export function HeaderCatagory(props) {
-    
+    const router = useRouter()
 
     return (
         <CatagoryContainer>
-        <div></div>
+        <div>
+            <MenuIcon style={{color: 'red'}} />
+        </div>
         <Ul>
             <ListItem>Kadin</ListItem>
             <ListItem>Erkek</ListItem>

@@ -52,6 +52,7 @@ font-size: 14px;
 line-height: 18px;
 margin-left: 5px;
 margin-bottom: 20px;
+
 &:first-child {
     font-family: 'Source Sans Pro';
 font-style: normal;
@@ -69,6 +70,17 @@ align-items: center;
 flex-direction: row;
 text-align: center;
 
+`
+export const SocialSpan = styled.span`
+color: white;
+ font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+margin-left: 5px;
+padding-top: 20px;
+margin-bottom: 20px;
 `
 export const LastItems = styled.div`
 display: flex;

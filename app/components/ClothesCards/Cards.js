@@ -11,6 +11,7 @@ import {
   ColorKeeper,
   FavIcon,
   RedDiv,
+  CardsKeeper,
 } from "./Cards.styled";
 
 import Checkbox from "@mui/material/Checkbox";
@@ -23,8 +24,8 @@ function Cards(props) {
   const [value, setValue] = React.useState(5);
 
   return (
-    <>
-      <div>
+    <CardsKeeper >
+      
         <CardContainer>
           <Image src="/test.jpg" width={281} height={420} />
           <FavIcon>
@@ -55,8 +56,218 @@ function Cards(props) {
             </ColorKeeper>
           </Content>
         </CardContainer>
-      </div>
-    </>
+        <CardContainer>
+          <Image src="/test.jpg" width={281} height={420} />
+          <FavIcon>
+            <Checkbox
+              {...label}
+              icon={<FavoriteBorder />}
+              checkedIcon={<Favorite style={{ color: "red" }} />}
+            />
+          </FavIcon>
+          
+          <Content>
+            <ContentItem1>Lorem impsum dolar</ContentItem1>
+            <Rating
+              name="simple-controlled"
+              value={value}
+              onChange={(event, newValue) => {
+                setValue(newValue);
+              }}
+            />
+            <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
+            <div>
+              <Price>99,99TL</Price>
+              <SalePrice>59,99TL</SalePrice>
+            </div>
+            <ColorKeeper>
+              <Color />
+              <Color />
+            </ColorKeeper>
+          </Content>
+        </CardContainer>
+        <CardContainer>
+          <Image src="/test.jpg" width={281} height={420} />
+          <FavIcon>
+            <Checkbox
+              {...label}
+              icon={<FavoriteBorder />}
+              checkedIcon={<Favorite style={{ color: "red" }} />}
+            />
+          </FavIcon>
+          
+          <Content>
+            <ContentItem1>Lorem impsum dolar</ContentItem1>
+            <Rating
+              name="simple-controlled"
+              value={value}
+              onChange={(event, newValue) => {
+                setValue(newValue);
+              }}
+            />
+            <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
+            <div>
+              <Price>99,99TL</Price>
+              <SalePrice>59,99TL</SalePrice>
+            </div>
+            <ColorKeeper>
+              <Color />
+              <Color />
+            </ColorKeeper>
+          </Content>
+        </CardContainer>
+        <CardContainer>
+          <Image src="/test.jpg" width={281} height={420} />
+          <FavIcon>
+            <Checkbox
+              {...label}
+              icon={<FavoriteBorder />}
+              checkedIcon={<Favorite style={{ color: "red" }} />}
+            />
+          </FavIcon>
+          
+          <Content>
+            <ContentItem1>Lorem impsum dolar</ContentItem1>
+            <Rating
+              name="simple-controlled"
+              value={value}
+              onChange={(event, newValue) => {
+                setValue(newValue);
+              }}
+            />
+            <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
+            <div>
+              <Price>99,99TL</Price>
+              <SalePrice>59,99TL</SalePrice>
+            </div>
+            <ColorKeeper>
+              <Color />
+              <Color />
+            </ColorKeeper>
+          </Content>
+        </CardContainer>
+        <CardContainer>
+          <Image src="/test.jpg" width={281} height={420} />
+          <FavIcon>
+            <Checkbox
+              {...label}
+              icon={<FavoriteBorder />}
+              checkedIcon={<Favorite style={{ color: "red" }} />}
+            />
+          </FavIcon>
+          
+          <Content>
+            <ContentItem1>Lorem impsum dolar</ContentItem1>
+            <Rating
+              name="simple-controlled"
+              value={value}
+              onChange={(event, newValue) => {
+                setValue(newValue);
+              }}
+            />
+            <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
+            <div>
+              <Price>99,99TL</Price>
+              <SalePrice>59,99TL</SalePrice>
+            </div>
+            <ColorKeeper>
+              <Color />
+              <Color />
+            </ColorKeeper>
+          </Content>
+        </CardContainer>
+        <CardContainer>
+          <Image src="/test.jpg" width={281} height={420} />
+          <FavIcon>
+            <Checkbox
+              {...label}
+              icon={<FavoriteBorder />}
+              checkedIcon={<Favorite style={{ color: "red" }} />}
+            />
+          </FavIcon>
+          
+          <Content>
+            <ContentItem1>Lorem impsum dolar</ContentItem1>
+            <Rating
+              name="simple-controlled"
+              value={value}
+              onChange={(event, newValue) => {
+                setValue(newValue);
+              }}
+            />
+            <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
+            <div>
+              <Price>99,99TL</Price>
+              <SalePrice>59,99TL</SalePrice>
+            </div>
+            <ColorKeeper>
+              <Color />
+              <Color />
+            </ColorKeeper>
+          </Content>
+        </CardContainer>
+        <CardContainer>
+          <Image src="/test.jpg" width={281} height={420} />
+          <FavIcon>
+            <Checkbox
+              {...label}
+              icon={<FavoriteBorder />}
+              checkedIcon={<Favorite style={{ color: "red" }} />}
+            />
+          </FavIcon>
+          
+          <Content>
+            <ContentItem1>Lorem impsum dolar</ContentItem1>
+            <Rating
+              name="simple-controlled"
+              value={value}
+              onChange={(event, newValue) => {
+                setValue(newValue);
+              }}
+            />
+            <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
+            <div>
+              <Price>99,99TL</Price>
+              <SalePrice>59,99TL</SalePrice>
+            </div>
+            <ColorKeeper>
+              <Color />
+              <Color />
+            </ColorKeeper>
+          </Content>
+        </CardContainer>
+        <CardContainer>
+          <Image src="/test.jpg" width={281} height={420} />
+          <FavIcon>
+            <Checkbox
+              {...label}
+              icon={<FavoriteBorder />}
+              checkedIcon={<Favorite style={{ color: "red" }} />}
+            />
+          </FavIcon>
+          
+          <Content>
+            <ContentItem1>Lorem impsum dolar</ContentItem1>
+            <Rating
+              name="simple-controlled"
+              value={value}
+              onChange={(event, newValue) => {
+                setValue(newValue);
+              }}
+            />
+            <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
+            <div>
+              <Price>99,99TL</Price>
+              <SalePrice>59,99TL</SalePrice>
+            </div>
+            <ColorKeeper>
+              <Color />
+              <Color />
+            </ColorKeeper>
+          </Content>
+        </CardContainer>
+      
+    </CardsKeeper>
   );
 }
 export default Cards;

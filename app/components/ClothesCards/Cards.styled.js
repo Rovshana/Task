@@ -1,6 +1,12 @@
 import styled from 'styled-components'
 
+export const CardsKeeper = styled.div`
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 
+
+`
 
 
 export const CardContainer = styled.div`
@@ -10,10 +16,13 @@ background: #FFFFFF;
 box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
 border-radius: 8px;
 border: 1px solid red;
+margin-bottom: 30px;
+
 `
 export const Content = styled.div`
 display: flex;
 flex-direction: column;
+padding-left: 20px;
 position: relative;
 `
 
@@ -21,7 +30,7 @@ export const FavIcon = styled.div`
 position: absolute;
 top: 230px;
 right: 0;
-left: 245px;
+left: 355px;
 background-color: white;
 width: 38px;
 height: 31px;
