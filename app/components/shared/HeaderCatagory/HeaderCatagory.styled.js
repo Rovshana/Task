@@ -15,11 +15,11 @@ display: flex;
 
 `
 export const ListItem = styled.li`
-margin-right: 17px;
+margin-right: 23px;
 font-family: 'Source Sans Pro';
 font-style: normal;
 font-weight: 600;
-font-size: 16px;
+font-size: 17px;
 display: flex;
 align-items: center;
 color: rgba(0, 0, 0, 0.9);

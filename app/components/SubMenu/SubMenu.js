@@ -1,113 +1,127 @@
+
 import React from 'react'
-import { MenuContainer } from './SubMenu.styled'
+import { MenuContainer, ParentDiv, Ul, Button, ListItem } from './SubMenu.styled'
 
  function SubMenu(props) {
     
 
     return (
-        <MenuContainer>
+        <MenuContainer className='container'>
             <div>
-                <button>Kadin</button>
-                <button>Erkek</button>
-                <button>Cocuk</button>
+                <Button>Kadin</Button>
+                <Button>Erkek</Button>
+                <Button>Cocuk</Button>
             </div>
-            <div>
-            <ul>
-                <li>Giyim</li>
-                <li>Elbise</li>
-                <li>T-shirt</li>
-                <li>Bluz&Tunik</li>
-                <li>Gomlek</li>
-                <li>Kazak&Hirka</li>
-                <li>Kaban&Mont</li>
-                <li>Ceket&Yelek</li>
-                <li>SweetShirt</li>
-                <li>Pantalon</li>
-                <li>Jean</li>
-                <li>Boyuk Beden</li>
-                <li>Tessetur</li>
-            </ul>
-            <ul>
-                <li>Kozmetik & Kişisel </li>
-                <li>Bakim</li>
-                <li>arfüm & Deodorant</li>
-                <li>Göz Makyajı</li>
-                <li>Güneş Ürünleri</li>
-                <li>Cilt Bakim</li>
-                <li>Ten Makyajı</li>
-                <li>Dudak Makyajı</li>
-                <li>sac Bakim</li>
-                <li>Cinsel Sağlık</li>
-                <li>Kadın Hijyen</li>
-                <li>Tıraş & Ağd</li>
+            <ParentDiv>
+            <Ul>
+                <ListItem>Giyim</ListItem>
+                <ListItem>Elbise</ListItem>
+                <ListItem>T-shirt</ListItem>
+                <ListItem>Bluz&Tunik</ListItem>
+                <ListItem>Gomlek</ListItem>
+                <ListItem>Kazak&Hirka</ListItem>
+                <ListItem>Kaban&Mont</ListItem>
+                <ListItem>Ceket&Yelek</ListItem>
+                <ListItem>SweetShirt</ListItem>
+                <ListItem>Pantalon</ListItem>
+                <ListItem>Jean</ListItem>
+                <ListItem>Boyuk Beden</ListItem>
+                <ListItem>Tessetur</ListItem>
+            </Ul>
+            <Ul>
+                <ListItem>Kozmetik & Kişisel </ListItem>
+                <ListItem>Bakim</ListItem>
+                <ListItem>arfüm & Deodorant</ListItem>
+                <ListItem>Göz Makyajı</ListItem>
+                <ListItem>Güneş Ürünleri</ListItem>
+                <ListItem>Cilt Bakim</ListItem>
+                <ListItem>Ten Makyajı</ListItem>
+                <ListItem>Dudak Makyajı</ListItem>
+                <ListItem>sac Bakim</ListItem>
+                <ListItem>Cinsel Sağlık</ListItem>
+                <ListItem>Kadın Hijyen</ListItem>
+                <ListItem>Tıraş & Ağd</ListItem>
 
-            </ul>
-            
-            <ul>
-                <li>Kozmetik & Kişisel </li>
-                <li>Bakim</li>
-                <li>arfüm & Deodorant</li>
-                <li>Göz Makyajı</li>
-                <li>Güneş Ürünleri</li>
-                <li>Cilt Bakim</li>
-                <li>Ten Makyajı</li>
-                <li>Dudak Makyajı</li>
-                <li>sac Bakim</li>
-                <li>Cinsel Sağlık</li>
-                <li>Kadın Hijyen</li>
-                <li>Tıraş & Ağd</li>
+            </Ul>
+            <Ul>
+                <ListItem>Kozmetik & Kişisel </ListItem>
+                <ListItem>Bakim</ListItem>
+                <ListItem>arfüm & Deodorant</ListItem>
+                <ListItem>Göz Makyajı</ListItem>
+                <ListItem>Güneş Ürünleri</ListItem>
+                <ListItem>Cilt Bakim</ListItem>
+                <ListItem>Ten Makyajı</ListItem>
+                <ListItem>Dudak Makyajı</ListItem>
+                <ListItem>sac Bakim</ListItem>
+                <ListItem>Cinsel Sağlık</ListItem>
+                <ListItem>Kadın Hijyen</ListItem>
+                <ListItem>Tıraş & Ağd</ListItem>
 
-            </ul>
-            
-            <ul>
-                <li>Kozmetik & Kişisel </li>
-                <li>Bakim</li>
-                <li>arfüm & Deodorant</li>
-                <li>Göz Makyajı</li>
-                <li>Güneş Ürünleri</li>
-                <li>Cilt Bakim</li>
-                <li>Ten Makyajı</li>
-                <li>Dudak Makyajı</li>
-                <li>sac Bakim</li>
-                <li>Cinsel Sağlık</li>
-                <li>Kadın Hijyen</li>
-                <li>Tıraş & Ağd</li>
+            </Ul>
+            <Ul>
+                <ListItem>Kozmetik & Kişisel </ListItem>
+                <ListItem>Bakim</ListItem>
+                <ListItem>arfüm & Deodorant</ListItem>
+                <ListItem>Göz Makyajı</ListItem>
+                <ListItem>Güneş Ürünleri</ListItem>
+                <ListItem>Cilt Bakim</ListItem>
+                <ListItem>Ten Makyajı</ListItem>
+                <ListItem>Dudak Makyajı</ListItem>
+                <ListItem>sac Bakim</ListItem>
+                <ListItem>Cinsel Sağlık</ListItem>
+                <ListItem>Kadın Hijyen</ListItem>
+                <ListItem>Tıraş & Ağd</ListItem>
 
-            </ul>
-            
-            <ul>
-                <li>Kozmetik & Kişisel </li>
-                <li>Bakim</li>
-                <li>arfüm & Deodorant</li>
-                <li>Göz Makyajı</li>
-                <li>Güneş Ürünleri</li>
-                <li>Cilt Bakim</li>
-                <li>Ten Makyajı</li>
-                <li>Dudak Makyajı</li>
-                <li>sac Bakim</li>
-                <li>Cinsel Sağlık</li>
-                <li>Kadın Hijyen</li>
-                <li>Tıraş & Ağd</li>
+            </Ul>
+            <Ul>
+                <ListItem>Kozmetik & Kişisel </ListItem>
+                <ListItem>Bakim</ListItem>
+                <ListItem>arfüm & Deodorant</ListItem>
+                <ListItem>Göz Makyajı</ListItem>
+                <ListItem>Güneş Ürünleri</ListItem>
+                <ListItem>Cilt Bakim</ListItem>
+                <ListItem>Ten Makyajı</ListItem>
+                <ListItem>Dudak Makyajı</ListItem>
+                <ListItem>sac Bakim</ListItem>
+                <ListItem>Cinsel Sağlık</ListItem>
+                <ListItem>Kadın Hijyen</ListItem>
+                <ListItem>Tıraş & Ağd</ListItem>
 
-            </ul>
-            
-            <ul>
-                <li>Kozmetik & Kişisel </li>
-                <li>Bakim</li>
-                <li>arfüm & Deodorant</li>
-                <li>Göz Makyajı</li>
-                <li>Güneş Ürünleri</li>
-                <li>Cilt Bakim</li>
-                <li>Ten Makyajı</li>
-                <li>Dudak Makyajı</li>
-                <li>sac Bakim</li>
-                <li>Cinsel Sağlık</li>
-                <li>Kadın Hijyen</li>
-                <li>Tıraş & Ağd</li>
+            </Ul>
+            <Ul>
+                <ListItem>Kozmetik & Kişisel </ListItem>
+                <ListItem>Bakim</ListItem>
+                <ListItem>arfüm & Deodorant</ListItem>
+                <ListItem>Göz Makyajı</ListItem>
+                <ListItem>Güneş Ürünleri</ListItem>
+                <ListItem>Cilt Bakim</ListItem>
+                <ListItem>Ten Makyajı</ListItem>
+                <ListItem>Dudak Makyajı</ListItem>
+                <ListItem>sac Bakim</ListItem>
+                <ListItem>Cinsel Sağlık</ListItem>
+                <ListItem>Kadın Hijyen</ListItem>
+                <ListItem>Tıraş & Ağd</ListItem>
 
-            </ul>
+            </Ul>
+            <Ul>
+                <ListItem>Kozmetik & Kişisel </ListItem>
+                <ListItem>Bakim</ListItem>
+                <ListItem>arfüm & Deodorant</ListItem>
+                <ListItem>Göz Makyajı</ListItem>
+                <ListItem>Güneş Ürünleri</ListItem>
+                <ListItem>Cilt Bakim</ListItem>
+                <ListItem>Ten Makyajı</ListItem>
+                <ListItem>Dudak Makyajı</ListItem>
+                <ListItem>sac Bakim</ListItem>
+                <ListItem>Cinsel Sağlık</ListItem>
+                <ListItem>Kadın Hijyen</ListItem>
+                <ListItem>Tıraş & Ağd</ListItem>
+
+            </Ul>
             
-            </div>
+           
+            
+            </ParentDiv>
         </MenuContainer>
     )
     

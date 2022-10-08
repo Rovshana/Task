@@ -7,17 +7,20 @@ export function HomeContainer(props) {
     
 
     return (
-        < div>
+    <>
            <Layout>
             
     <div className='container'>
+       
         <div className='col-9'>
        <Cards/>
        </div>
+      
        </div>
        </Layout>
             
        
-        </div>
+        
+        </>
     )
 }

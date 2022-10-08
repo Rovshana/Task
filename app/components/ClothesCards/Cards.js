@@ -25,248 +25,259 @@ function Cards(props) {
 
   return (
     <CardsKeeper >
-      
-        <CardContainer>
+      <CardContainer>
+        <div style={{position:"relative"}}>
           <Image src="/test.jpg" width={281} height={420} />
           <FavIcon>
             <Checkbox
               {...label}
               icon={<FavoriteBorder />}
               checkedIcon={<Favorite style={{ color: "red" }} />}
-            />
+              />
           </FavIcon>
-          
-          <Content>
-            <ContentItem1>Lorem impsum dolar</ContentItem1>
-            <Rating
-              name="simple-controlled"
-              value={value}
-              onChange={(event, newValue) => {
-                setValue(newValue);
-              }}
-            />
-            <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
-            <div>
-              <Price>99,99TL</Price>
-              <SalePrice>59,99TL</SalePrice>
-            </div>
-            <ColorKeeper>
-              <Color />
-              <Color />
-            </ColorKeeper>
-          </Content>
-        </CardContainer>
-        <CardContainer>
+        </div>
+      <Content>
+        <ContentItem1>Lorem impsum dolar</ContentItem1>
+        <Rating
+          name="simple-controlled"
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        />
+        <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
+        <div>
+          <Price>99,99TL</Price>
+          <SalePrice>59,99TL</SalePrice>
+        </div>
+        <ColorKeeper>
+          <Color />
+          <Color />
+        </ColorKeeper>
+      </Content>
+
+      </CardContainer>
+      <CardContainer>
+        <div style={{position:"relative"}}>
           <Image src="/test.jpg" width={281} height={420} />
           <FavIcon>
             <Checkbox
               {...label}
               icon={<FavoriteBorder />}
               checkedIcon={<Favorite style={{ color: "red" }} />}
-            />
+              />
           </FavIcon>
-          
-          <Content>
-            <ContentItem1>Lorem impsum dolar</ContentItem1>
-            <Rating
-              name="simple-controlled"
-              value={value}
-              onChange={(event, newValue) => {
-                setValue(newValue);
-              }}
-            />
-            <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
-            <div>
-              <Price>99,99TL</Price>
-              <SalePrice>59,99TL</SalePrice>
-            </div>
-            <ColorKeeper>
-              <Color />
-              <Color />
-            </ColorKeeper>
-          </Content>
-        </CardContainer>
-        <CardContainer>
+        </div>
+      <Content>
+        <ContentItem1>Lorem impsum dolar</ContentItem1>
+        <Rating
+          name="simple-controlled"
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        />
+        <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
+        <div>
+          <Price>99,99TL</Price>
+          <SalePrice>59,99TL</SalePrice>
+        </div>
+        <ColorKeeper>
+          <Color />
+          <Color />
+        </ColorKeeper>
+      </Content>
+
+      </CardContainer>
+      <CardContainer>
+        <div style={{position:"relative"}}>
           <Image src="/test.jpg" width={281} height={420} />
           <FavIcon>
             <Checkbox
               {...label}
               icon={<FavoriteBorder />}
               checkedIcon={<Favorite style={{ color: "red" }} />}
-            />
+              />
           </FavIcon>
-          
-          <Content>
-            <ContentItem1>Lorem impsum dolar</ContentItem1>
-            <Rating
-              name="simple-controlled"
-              value={value}
-              onChange={(event, newValue) => {
-                setValue(newValue);
-              }}
-            />
-            <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
-            <div>
-              <Price>99,99TL</Price>
-              <SalePrice>59,99TL</SalePrice>
-            </div>
-            <ColorKeeper>
-              <Color />
-              <Color />
-            </ColorKeeper>
-          </Content>
-        </CardContainer>
-        <CardContainer>
+        </div>
+      <Content>
+        <ContentItem1>Lorem impsum dolar</ContentItem1>
+        <Rating
+          name="simple-controlled"
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        />
+        <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
+        <div>
+          <Price>99,99TL</Price>
+          <SalePrice>59,99TL</SalePrice>
+        </div>
+        <ColorKeeper>
+          <Color />
+          <Color />
+        </ColorKeeper>
+      </Content>
+
+      </CardContainer>
+      <CardContainer>
+        <div style={{position:"relative"}}>
           <Image src="/test.jpg" width={281} height={420} />
           <FavIcon>
             <Checkbox
               {...label}
               icon={<FavoriteBorder />}
               checkedIcon={<Favorite style={{ color: "red" }} />}
-            />
+              />
           </FavIcon>
-          
-          <Content>
-            <ContentItem1>Lorem impsum dolar</ContentItem1>
-            <Rating
-              name="simple-controlled"
-              value={value}
-              onChange={(event, newValue) => {
-                setValue(newValue);
-              }}
-            />
-            <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
-            <div>
-              <Price>99,99TL</Price>
-              <SalePrice>59,99TL</SalePrice>
-            </div>
-            <ColorKeeper>
-              <Color />
-              <Color />
-            </ColorKeeper>
-          </Content>
-        </CardContainer>
-        <CardContainer>
+        </div>
+      <Content>
+        <ContentItem1>Lorem impsum dolar</ContentItem1>
+        <Rating
+          name="simple-controlled"
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        />
+        <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
+        <div>
+          <Price>99,99TL</Price>
+          <SalePrice>59,99TL</SalePrice>
+        </div>
+        <ColorKeeper>
+          <Color />
+          <Color />
+        </ColorKeeper>
+      </Content>
+      </CardContainer>
+      <CardContainer>
+        <div style={{position:"relative"}}>
           <Image src="/test.jpg" width={281} height={420} />
           <FavIcon>
             <Checkbox
               {...label}
               icon={<FavoriteBorder />}
               checkedIcon={<Favorite style={{ color: "red" }} />}
-            />
+              />
           </FavIcon>
-          
-          <Content>
-            <ContentItem1>Lorem impsum dolar</ContentItem1>
-            <Rating
-              name="simple-controlled"
-              value={value}
-              onChange={(event, newValue) => {
-                setValue(newValue);
-              }}
-            />
-            <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
-            <div>
-              <Price>99,99TL</Price>
-              <SalePrice>59,99TL</SalePrice>
-            </div>
-            <ColorKeeper>
-              <Color />
-              <Color />
-            </ColorKeeper>
-          </Content>
-        </CardContainer>
-        <CardContainer>
+        </div>
+      <Content>
+        <ContentItem1>Lorem impsum dolar</ContentItem1>
+        <Rating
+          name="simple-controlled"
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        />
+        <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
+        <div>
+          <Price>99,99TL</Price>
+          <SalePrice>59,99TL</SalePrice>
+        </div>
+        <ColorKeeper>
+          <Color />
+          <Color />
+        </ColorKeeper>
+      </Content>
+      </CardContainer>
+      <CardContainer>
+        <div style={{position:"relative"}}>
           <Image src="/test.jpg" width={281} height={420} />
           <FavIcon>
             <Checkbox
               {...label}
               icon={<FavoriteBorder />}
               checkedIcon={<Favorite style={{ color: "red" }} />}
-            />
+              />
           </FavIcon>
-          
-          <Content>
-            <ContentItem1>Lorem impsum dolar</ContentItem1>
-            <Rating
-              name="simple-controlled"
-              value={value}
-              onChange={(event, newValue) => {
-                setValue(newValue);
-              }}
-            />
-            <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
-            <div>
-              <Price>99,99TL</Price>
-              <SalePrice>59,99TL</SalePrice>
-            </div>
-            <ColorKeeper>
-              <Color />
-              <Color />
-            </ColorKeeper>
-          </Content>
-        </CardContainer>
-        <CardContainer>
+        </div>
+      <Content>
+        <ContentItem1>Lorem impsum dolar</ContentItem1>
+        <Rating
+          name="simple-controlled"
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        />
+        <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
+        <div>
+          <Price>99,99TL</Price>
+          <SalePrice>59,99TL</SalePrice>
+        </div>
+        <ColorKeeper>
+          <Color />
+          <Color />
+        </ColorKeeper>
+      </Content>
+
+      </CardContainer>
+      <CardContainer>
+        <div style={{position:"relative"}}>
           <Image src="/test.jpg" width={281} height={420} />
           <FavIcon>
             <Checkbox
               {...label}
               icon={<FavoriteBorder />}
               checkedIcon={<Favorite style={{ color: "red" }} />}
-            />
+              />
           </FavIcon>
-          
-          <Content>
-            <ContentItem1>Lorem impsum dolar</ContentItem1>
-            <Rating
-              name="simple-controlled"
-              value={value}
-              onChange={(event, newValue) => {
-                setValue(newValue);
-              }}
-            />
-            <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
-            <div>
-              <Price>99,99TL</Price>
-              <SalePrice>59,99TL</SalePrice>
-            </div>
-            <ColorKeeper>
-              <Color />
-              <Color />
-            </ColorKeeper>
-          </Content>
-        </CardContainer>
-        <CardContainer>
+        </div>
+      <Content>
+        <ContentItem1>Lorem impsum dolar</ContentItem1>
+        <Rating
+          name="simple-controlled"
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        />
+        <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
+        <div>
+          <Price>99,99TL</Price>
+          <SalePrice>59,99TL</SalePrice>
+        </div>
+        <ColorKeeper>
+          <Color />
+          <Color />
+        </ColorKeeper>
+      </Content>
+      </CardContainer>
+      <CardContainer>
+        <div style={{position:"relative"}}>
           <Image src="/test.jpg" width={281} height={420} />
           <FavIcon>
             <Checkbox
               {...label}
               icon={<FavoriteBorder />}
               checkedIcon={<Favorite style={{ color: "red" }} />}
-            />
+              />
           </FavIcon>
-          
-          <Content>
-            <ContentItem1>Lorem impsum dolar</ContentItem1>
-            <Rating
-              name="simple-controlled"
-              value={value}
-              onChange={(event, newValue) => {
-                setValue(newValue);
-              }}
-            />
-            <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
-            <div>
-              <Price>99,99TL</Price>
-              <SalePrice>59,99TL</SalePrice>
-            </div>
-            <ColorKeeper>
-              <Color />
-              <Color />
-            </ColorKeeper>
-          </Content>
-        </CardContainer>
-      
+        </div>
+      <Content>
+        <ContentItem1>Lorem impsum dolar</ContentItem1>
+        <Rating
+          name="simple-controlled"
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        />
+        <ContentItem2> SUNY.P1FX Turkuaz Kiz Çocuk Deniz ...</ContentItem2>
+        <div>
+          <Price>99,99TL</Price>
+          <SalePrice>59,99TL</SalePrice>
+        </div>
+        <ColorKeeper>
+          <Color />
+          <Color />
+        </ColorKeeper>
+      </Content>
+
+      </CardContainer>
     </CardsKeeper>
   );
 }

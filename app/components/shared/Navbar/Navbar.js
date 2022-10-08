@@ -1,6 +1,7 @@
 import React from 'react'
 import { Logo, NavBarContainer, SearchDiv, Button, Input, Ul, ListItem, RightCorner, Span, RightBox, SearchItem } from './Navbar.styled'
 import Image from 'next/Image'
+import { changeLanguage } from "i18next";
  function Navbar(props) {
     
 

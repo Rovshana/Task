@@ -1,16 +1,24 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import { CatagoryContainer, ListItem, Ul } from './HeaderCatagory.styled'
 import MenuIcon from '@mui/icons-material/Menu';
 import SubMenu from '../../SubMenu/SubMenu';
 import { useRouter } from 'next/router';
 export function HeaderCatagory(props) {
-    const router = useRouter()
+    const  [show, setShow] = useState(false)
+const changeShow = ()=>{
+    setShow(!show)
+}
 
     return (
         <CatagoryContainer>
         <div>
-            <MenuIcon style={{color: 'red'}} />
+            <MenuIcon style={{color: 'red'}} onClick={changeShow} />
+            {
+                show? (
+                    <SubMenu/>
+                ): null
+            }
         </div>
         <Ul>
             <ListItem>Kadin</ListItem>

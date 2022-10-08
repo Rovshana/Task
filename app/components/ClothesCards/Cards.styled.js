@@ -10,6 +10,7 @@ justify-content: space-between;
 
 
 export const CardContainer = styled.div`
+position: relative;
 width: 281px;
 height: 565px;
 background: #FFFFFF;
@@ -17,23 +18,21 @@ box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
 border-radius: 8px;
 border: 1px solid red;
 margin-bottom: 30px;
+margin-right: 30px;
 
 `
 export const Content = styled.div`
 display: flex;
 flex-direction: column;
 padding-left: 20px;
-position: relative;
+
 `
 
 export const FavIcon = styled.div`
 position: absolute;
-top: 230px;
+top: 10px;
 right: 0;
-left: 355px;
 background-color: white;
-width: 38px;
-height: 31px;
 box-shadow: -2px 0px 3px rgba(0, 0, 0, 0.1);
 border-radius: 1000px 0px 0px 1000px;
 
