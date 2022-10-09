@@ -121,6 +121,8 @@ margin: 20px;
 export const TotalPriceContainer = styled.div`
 width: 400px;
 height: 138.33px;
+position: absolute;
+top: 65%;
 background: #FEFEFE;
 box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
 display: flex;
@@ -141,6 +143,8 @@ font-family: 'Source Sans Pro' , sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 18px;
+padding-top: 10px;
+padding-left: 6px;
 line-height: 23px;
 letter-spacing: 0.05em;
 
@@ -152,6 +156,7 @@ export const TotalPrice = styled.p`
 font-family: 'Source Sans Pro', sans-serif;
 font-style: normal;
 font-weight: 900;
+padding-right: 14px;
 font-size: 24px;
 line-height: 42px;
 text-align: right;

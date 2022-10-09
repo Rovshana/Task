@@ -10,7 +10,7 @@ export function RightBasket(props) {
            <Center>
 .
            </Center>
-           <div className="right">
+           <div className="right" style={{position:"relative"}}>
             <Top>
                 <div>
             <Span1>ÜRÜN SAYI:</Span1> <Span2>6</Span2> 

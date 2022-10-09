@@ -13,6 +13,7 @@ font-weight: 600;
 font-size: 16px;
 line-height: 20px;
 color: #FF0000;
+cursor: pointer;
 }
 
 .dropdownMenu{
@@ -24,6 +25,12 @@ color: #FF0000;
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
+
+}
+input[type=checkbox]{
+    accent-color: red  !important;
+    border: blue;
+    background-color: white;
 }
 .line{
     width: 247.34px;
@@ -34,3 +41,17 @@ transform: matrix(1, 0, 0, -1, 0, 0);
 display: block;
 margin: 20px;
 }
+
+.dropdownGender{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.dropdownGender input{
+    background: #FFFFFF;
+border: 1.5px solid #D7D7D7;
+border-radius: 2px;
+width: 20px;
+height: 20px;
+}
+

@@ -1,11 +1,8 @@
 import styled from "styled-components"
  export const MenuContainer = styled.div`
- width: 55%;
  height: 437px;
  background-color: white;
- 
- 
-
+ z-index: 1;
  
  `
 export const Button = styled.button`

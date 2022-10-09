@@ -3,8 +3,6 @@ import React from 'react'
 import { MenuContainer, ParentDiv, Ul, Button, ListItem } from './SubMenu.styled'
 
  function SubMenu(props) {
-    
-
     return (
         <MenuContainer className='container'>
             <div>
