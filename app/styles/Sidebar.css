@@ -1,0 +1,36 @@
+.test{
+    background-color: red;
+}
+.menuTriggerDiv{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+.menuTrigger{
+font-family: 'Source Sans Pro', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+color: #FF0000;
+}
+
+.dropdownMenu{
+    width: 250px;
+   
+}
+.dropdownItem{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.line{
+    width: 247.34px;
+height: 1px;
+background: #EDEDED;
+border-bottom: 1px solid #EDEDED;
+transform: matrix(1, 0, 0, -1, 0, 0);
+display: block;
+margin: 20px;
+}

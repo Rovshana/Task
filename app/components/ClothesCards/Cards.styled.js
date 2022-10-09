@@ -19,7 +19,6 @@ border-radius: 8px;
 border: 1px solid red;
 margin-bottom: 30px;
 margin-right: 30px;
-
 `
 export const Content = styled.div`
 display: flex;
@@ -100,4 +99,27 @@ margin-right: 8px;
 export const ColorKeeper = styled.div`
 display: flex;
 flex-direction: row;
+padding-top: 10px;
+`
+export const Button = styled.button`
+width: 89px;
+height: 27px;
+left: 7px;
+top: 6px;
+
+background: #FF0000;
+box-shadow: 0px 4px 4px rgba(217, 7, 9, 0.23);
+border-radius: 100px;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+border: none;
+margin-left: 95px;
+display: none;
+color: #FFFFFF;
+
+
 `

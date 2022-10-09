@@ -7,9 +7,9 @@ function ProductContainer(props) {
     return (
         
             
-        <Layout>
+      
             <main><ProductDetail/></main>
-        </Layout>
+        
     )
 }
 

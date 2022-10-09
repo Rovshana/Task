@@ -11,12 +11,13 @@ justify-content: space-between;
 
 `
 export const Logo = styled.p`
+font-family: 'Comfortaa';
 font-style: normal;
 font-weight: 700;
 font-size: 31.9493px;
 line-height: 36px;
 letter-spacing: 0.23em;
-font-family: sans-serif;
+font-family: 'Comfortaa', cursive;
 
 color: #FF0000;
 

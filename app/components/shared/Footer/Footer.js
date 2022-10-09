@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, FooterTopConent, FooterTopContainer, Input, SmallContainer, Span, LastItems, SocialSpan, Paragraph } from './Footer.styled'
+import { Button, FooterTopConent, FooterTopContainer, Input, SmallContainer, Span, LastItems, SocialSpan, Paragraph, FooterItem } from './Footer.styled'
 import Image from 'next/Image'
 
 
@@ -31,22 +31,22 @@ import Image from 'next/Image'
             </FooterTopConent>
             <div>
                 <Span>Sosyal Medya</Span>
-                <SmallContainer>
-                    <Image src='/Footer/fb.png' width={24} height={23} style={{borderRadius: "50%"}}/>
-                    <SocialSpan>Facebook</SocialSpan>
-                </SmallContainer>
-                <div>
-                <Image src='/Footer/insta.svg' width={18} height={18} style={{borderRadius: "50%"}}/>
-                    <SocialSpan>Instagram</SocialSpan>
-                </div>
-                <div>
-                <Image src='/Footer/Twitter.png' width={26} height={26}/>
-                    <SocialSpan>Twitter</SocialSpan>
-                </div>
-                <div>
-                <Image src='/Footer/youtubee.png' width={36} height={36} style={{borderRadius: "50%"}}/>
-                    <SocialSpan>You tube</SocialSpan>
-                </div>
+                <FooterItem>
+                    <Image src='/Footer/fb.png' width={25} height={25} style={{borderRadius: "50%", marginRight: "5px"}}/>
+                   Facebook
+                </FooterItem>
+                <FooterItem>
+                <Image src='/Footer/insta.svg' width={18} height={18} style={{borderRadius: "50%",marginRight: "5px" }}/>
+                    Instagram
+                </FooterItem>
+                <FooterItem>
+                <Image src='/Footer/Twitter.png' width={26} height={26} style={{marginRight: "5px"}}/>
+                    Twitter
+                </FooterItem>
+                <FooterItem>
+                <Image src='/Footer/youtubee.png' width={36} height={36} style={{borderRadius: "50%", marginRight: "5px"}}/>
+                    You tube
+                </FooterItem>
     
             </div>
             <LastItems>

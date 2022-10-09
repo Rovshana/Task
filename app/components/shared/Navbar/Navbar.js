@@ -8,7 +8,7 @@ import { changeLanguage } from "i18next";
     return (
         <NavBarContainer>
             <div>
-                <Logo>Logo</Logo>
+                <img src="/Navbar_Svgs/redLogi.svg"/>
             </div>
             <Ul>
                 <ListItem>Magazani yarat</ListItem>

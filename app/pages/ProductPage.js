@@ -1,4 +1,4 @@
-import React from 'react'
+
 import ProductContainer from '../Features/ProductContainer/ProductContainer'
 
  function ProductPage(props) {

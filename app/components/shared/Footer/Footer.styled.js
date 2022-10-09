@@ -128,3 +128,10 @@ line-height: 22px;
 color: #FFFFFF;
 width: 250px;
 `
+ export const FooterItem = styled.div`
+
+margin-bottom: 20px;
+ display: flex;
+ align-items: center;
+color: white;
+`

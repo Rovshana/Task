@@ -12,6 +12,7 @@ import {
   FavIcon,
   RedDiv,
   CardsKeeper,
+  Button,
 } from "./Cards.styled";
 
 import Checkbox from "@mui/material/Checkbox";
@@ -53,6 +54,7 @@ function Cards(props) {
         <ColorKeeper>
           <Color />
           <Color />
+          <Button>Sepete ekle</Button>
         </ColorKeeper>
       </Content>
 
@@ -275,6 +277,8 @@ function Cards(props) {
           <Color />
           <Color />
         </ColorKeeper>
+
+       
       </Content>
 
       </CardContainer>

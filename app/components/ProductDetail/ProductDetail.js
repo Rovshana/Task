@@ -8,6 +8,7 @@ import {
   Button1,
   Button2,
   Buttons,
+  CargoText,
   Center,
   Id,
   NewPrice,
@@ -16,6 +17,7 @@ import {
   ProductName,
   RateNum,
   RatingNum,
+  SaleText,
   Seller,
   TinyDiv,
   TopElement,
@@ -72,23 +74,30 @@ function ProductDetail(props) {
           <TinyDiv>
             <div>
             <Image src="/product/truck.svg" width={50} height={50} alt=".."/>
-              <span>hi</span>
+              <CargoText>KARGO BEDAVA</CargoText>
               
             </div>
           </TinyDiv>
           <TinyDiv>
             <div>
             <Image src="/product/sale.svg" width={50} height={50} alt=".."/>
-              <span>hi</span>
+              <SaleText>40% İNDİRİM</SaleText>
               
             </div>
           </TinyDiv>
         
         </Center>
+
+        <Center>
+          
+          </Center>
         <Buttons>
+
           <Button1>Hemen Al</Button1>
           <Button2>Sepete ekle</Button2>
         </Buttons>
+
+       
       </div>
     </div>
   );

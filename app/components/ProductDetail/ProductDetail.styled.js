@@ -121,13 +121,34 @@ margin-left: 20px;
 export const  TinyDiv = styled.div`
 width: 97px;
 height: 155px;
-left: 1456.93px;
-top: 434.63px;
 background: #FFFFFF;
 border: 1px solid #E9E9E9;
 border-radius: 4px;
 margin-top: 40px;
 margin-left: 15px;
+display: flex;
+align-items: center;
+flex-direction: column;
+
+`
+export const CargoText = styled.div`
+font-family: 'Source Sans Pro', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+color: #DDE6EF;
+
+`
+export const SaleText = styled.span`
+font-family: 'Source Sans Pro' sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 14px;
+text-align: center;
+
+color: #DDE6EF;
 
 `
 export const Buttons = styled.div`
