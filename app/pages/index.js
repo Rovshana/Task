@@ -1,3 +1,4 @@
+import { Category } from "../components/categories/Category";
 import Footer from "../components/shared/Footer/Footer";
 import FooterBottom from "../components/shared/Footer/FooterBottom";
 import { HeaderCatagory } from "../components/shared/HeaderCatagory/HeaderCatagory";
@@ -13,10 +14,11 @@ export default function Home() {
     <div >
       {/* <BasketConatiner/> */}
       
-      <HomeContainer/>
+      {/* <HomeContainer/> */}
       {/* <ProductContainer/> */}
-     
+     <Category/>
      {/* <SubMenu/>   */}
+     
     </div>
   )
 }
