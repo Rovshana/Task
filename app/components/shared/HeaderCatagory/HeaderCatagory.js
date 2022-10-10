@@ -3,17 +3,26 @@ import React, { useState } from 'react'
 import { CatagoryContainer, ListItem, Ul } from './HeaderCatagory.styled'
 import MenuIcon from '@mui/icons-material/Menu';
 import SubMenu from '../../SubMenu/SubMenu';
+import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import { useRouter } from 'next/router';
+import { MenuContainer } from '../../SubMenu/SubMenu.styled';
+import {Menu} from '../../Menu/Menu'
 export  function HeaderCatagory(props) {
     const  [show, setShow] = useState(false)
+    const [modal, setModal] = useState(false)
 const changeShow = ()=>{
     setShow(!show)
 }
 
     return (
         <CatagoryContainer>
-        <div>
-            <MenuIcon style={{color: 'red'}}  />
+        <div style={{display:"flex",flexDirection:"column"}}>
+            {
+           !modal ? <MenuIcon style={{color: 'red'}} onClick={()=>setModal(!modal)}  /> : <CloseOutlinedIcon style={{color: 'red'}} onClick={()=>setModal(!modal)}/>
+            
+            }{
+                modal? <Menu/>: ""
+            }
             
         </div>
         
