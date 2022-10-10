@@ -106,8 +106,6 @@ background: #FFFFFF;
 border: 1px solid #E9E9E9;
 border-radius: 4px;
 margin-top: 40px;
-
-
 `
 export const ProductColor = styled.span`
 font-family: 'Source Sans Pro';
@@ -150,6 +148,80 @@ text-align: center;
 
 color: #DDE6EF;
 
+`
+export const Container = styled.div`
+width: 593px;
+height: 155px;
+border: 1px solid green;
+display: flex;
+padding-top: 40px;
+`
+export const Size = styled.span`
+font-family: 'Source Sans Pro', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+color: #000000;
+
+`
+export const SizeTable = styled.span`
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+text-decoration-line: underline;
+color: #A6A6A6;
+
+`
+export const Delivery = styled.span`
+font-family: 'Source Sans Pro', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+color: #A5A5A5;
+
+`
+export const Date = styled.span`
+color: #1A1A1A;
+font-family: 'Source Sans Pro', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 15px;
+
+
+`
+export const Increase = styled.div`
+width: 36.4px;
+height: 30px;
+background: #FAF9F9;
+border: 0.909909px solid #E6E6E6;
+transform: matrix(1, 0, 0, -1, 0, 0);
+text-align: center;
+
+
+`
+export const ItemCount = styled.span`
+width: 65.74px;
+height: 40px;
+background: #FAF9F9;
+border: 1px solid #E6E6E6;
+padding-left:  15px;
+padding-right: 15px;
+padding-top: 3px;
+padding-bottom: 3px;
+`
+export const Div = styled.div`
+display: flex;
+flex-direction: column;
+width: 300px;
+`
+export const SpanKeeper = styled.div`
+display: flex;
+justify-content: space-between;
 `
 export const Buttons = styled.div`
 display: flex;

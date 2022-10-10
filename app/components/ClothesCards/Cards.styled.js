@@ -55,6 +55,20 @@ justify-content: space-between;
 padding-left: 10px;
 padding-right: 10px;
 visibility: hidden;
+position: absolute;
+top: 250px;
+left: 40px;
+
+`
+export const Logo1 = styled.div`
+color: gray;
+position: absolute;
+position: absolute;
+top: 170px;
+left: 100px;
+right: 0;
+visibility: hidden;
+
 
 `
 export const Size = styled.span`
@@ -78,7 +92,10 @@ margin-right: 30px;
 &:hover ${Button} {
     visibility: visible;
   }
-  &:hover${Sizes}{
+&:hover ${Sizes}{
+visibility: visible !important;
+  }
+&:hover ${Logo1}{
 visibility: visible !important;
   }
 

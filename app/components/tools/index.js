@@ -19,3 +19,12 @@
     )
 
  }
+
+ export function DropdownColor(props){
+    return(
+        <li>
+           <button>{props.bgColor}</button> 
+           <span>{props.color}</span>
+        </li>
+    )
+ }

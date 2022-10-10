@@ -15,8 +15,6 @@ line-height: 18px;
 color: #666666;
 border: none;
 
-
-
 `
 export const Option = styled.option`
 font-family: 'Source Sans Pro', sans-serif;
@@ -32,3 +30,4 @@ border: none;
     cursor: pointer;
 }
 `
+

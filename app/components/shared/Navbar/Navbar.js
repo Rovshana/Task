@@ -1,9 +1,10 @@
 import React from 'react'
-import { Logo, NavBarContainer, SearchDiv, Button, Input, Ul, ListItem, RightCorner, Span, RightBox, SearchItem } from './Navbar.styled'
+import { NavBarContainer, SearchDiv, Button, Input, Ul, ListItem, RightCorner, Span, RightBox, SearchItem } from './Navbar.styled'
 import Image from 'next/Image'
 import { changeLanguage } from "i18next";
+import { useRouter } from 'next/router';
  function Navbar(props) {
-    
+    const route  = useRouter()
 
     return (
         <NavBarContainer>
@@ -14,6 +15,7 @@ import { changeLanguage } from "i18next";
                 <ListItem>Magazani yarat</ListItem>
                 <ListItem>Yardim</ListItem>
             </Ul>
+            
             <SearchDiv>
                 <SearchItem>
             <Image src='/Navbar_Svgs/Search.svg' alt=".." width={22} height={16}/>
@@ -33,7 +35,7 @@ import { changeLanguage } from "i18next";
                 </RightBox>
                 <RightBox>
                 <Image src='/Navbar_Svgs/Basket.svg' alt=".." width={16} height={16}/>
-                    <Span>Sepetim</Span>
+                    <Span onClick={()=>route.push('/basket')}>Sepetim</Span>
                 </RightBox>
             </RightCorner>
             

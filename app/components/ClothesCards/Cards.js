@@ -13,9 +13,9 @@ import {
   RedDiv,
   CardsKeeper,
   Button,
-  Info,
   Sizes,
   Size,
+  Logo1,
 } from "./Cards.styled";
 
 import Checkbox from "@mui/material/Checkbox";
@@ -23,11 +23,13 @@ import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 import Favorite from "@mui/icons-material/Favorite";
 import Rating from "@mui/material/Rating";
 import { clothesApi } from "../../Api/ClothesCards";
+import { useRouter } from "next/router";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 function Cards(props) {
   const [value, setValue] = React.useState(5);
   const [data, setData] = useState([])
+  const route = useRouter()
 useEffect(() => {
   getData()
 }, [])
@@ -45,7 +47,7 @@ const getData = ()=>{
       {
           data.map((item, index)=>(
            
-            <CardContainer>
+            <CardContainer onClick={()=>route.push('/ProductPage')}>
 
         <div style={{position:"relative"}}>
           <Image src={item.photo} width={281} height={420} />
@@ -83,6 +85,9 @@ const getData = ()=>{
           <Size>XL</Size>
           <Size>XLL</Size>
         </Sizes>
+        <Logo1>
+          <img src="/product/zoom.svg" />
+        </Logo1>
       </Content>
       
       </CardContainer>

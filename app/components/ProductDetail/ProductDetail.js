@@ -21,6 +21,16 @@ import {
   Seller,
   TinyDiv,
   TopElement,
+  Size,
+  SizeTable,
+  Div,
+  Delivery,
+  Date,
+  Increase,
+  ItemCount,
+  Box,
+  Container,
+  SpanKeeper
 } from "./ProductDetail.styled";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 function ProductDetail(props) {
@@ -87,15 +97,25 @@ function ProductDetail(props) {
           </TinyDiv>
         
         </Center>
+        <Container>
+          <Div>
+            <SpanKeeper>
+            <Size>Beden</Size>
+            <SizeTable>Beden Tablosu</SizeTable>
+            </SpanKeeper>
+            <p>Choose: size</p>
+          </Div>
+          <div>Second</div>
+        </Container>
+       
 
-        <Center>
-          
-          </Center>
-        <Buttons>
+
+      
+        {/* <Buttons>
 
           <Button1>Hemen Al</Button1>
           <Button2>Sepete ekle</Button2>
-        </Buttons>
+        </Buttons> */}
 
        
       </div>
