@@ -37,11 +37,13 @@ function Sidebar(props) {
               <DropDownItem text={"T-shirt"} count={15} />
               <DropDownItem text={"Elbise"} count={1} />
             </ul>
-            <span className="line"></span>
+          
           </div>
+          
         ) : (
           ""
         )}
+         <span className="line"></span>
          <div className='menuTriggerDiv'>
                             <p className='menuTrigger' onClick={()=>setGender(!gender)}>Cinsiyet</p> 
                               { open? <ExpandMoreIcon/> :<ExpandLessIcon/> }

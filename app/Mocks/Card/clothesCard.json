@@ -1,0 +1,51 @@
+[
+    {
+      "description": "Koton. kadin ipek bluz",
+      "oldPrice": "100",
+      "NewPrice": "65",
+      "color": ["blue", "black"],
+
+ "photo": "https://n.nordstrommedia.com/id/sr3/6fa79269-cacc-4774-9968-100a18a96520.jpeg?h=365&w=240&dpr=2"
+    }, 
+    {
+        "description": " Colins. Kadın çok rengli sweetshirt",
+        "oldPrice": "89",
+        "NewPrice": "55",
+        "color": ["orange", "pink"],
+        "photo": "https://i.pinimg.com/originals/b5/7b/00/b57b00e8bd072de3670a59f3b8724886.jpg"
+    },
+    {
+       "description": "Trendyolmilla.Kadın pamuk Gömlek",
+       "NewPrice": "67",
+       "oldPrice": "45",
+       "color": ["crimson", "black"],
+       "photo": "https://cdn.modamizbir.com/Uploads/UrunResimleri/buyuk/beyaz-cepli-bayan-gomlek-12507b-824d.jpg"
+
+
+
+    },
+    {
+        "description": "DeFacto Kadın midi-boy etek",
+        "NewPrice": "120",
+        "oldPrice": "70",
+        "color": ["brown", "yellow"],
+        "photo": "https://productimages.hepsiburada.net/s/196/600-800/110000164504606.jpg"
+
+    },
+    {
+        "description": "Denim.Mom Kadın Esnek Jean ",
+        "oldPrice": "444",
+        "NewPrice": "320",
+        "color": ["black", "blue"],
+        "photo": "https://f-lwr-l.mncdn.com/livephotos/W22HZB26K/W22HZB26K396_3.jpg"
+    },
+    {
+        "description": "DeFacto.Bayan iki tarafli Yelek",
+        "NewPrice": "99",
+        "oldPrice": "144",
+        "color": ["gray", "red"],
+        "photo": "https://cdn.modamizbir.com/Uploads/UrunResimleri/buyuk/siyah-bej-cift-tarafli-dolumlu-sisme-yelek-129424-2021936269.jpg"
+    }
+
+
+]

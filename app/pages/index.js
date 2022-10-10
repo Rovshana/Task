@@ -14,9 +14,9 @@ export default function Home() {
     <div >
       {/* <BasketConatiner/> */}
       
-      {/* <HomeContainer/> */}
+      <HomeContainer/>
       {/* <ProductContainer/> */}
-     <Category/>
+     {/* <Category/> */}
      {/* <SubMenu/>   */}
      
     </div>
