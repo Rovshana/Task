@@ -1,9 +1,10 @@
 import React from 'react'
-import { Button, Center, ListElement, Ul, Main } from './Category.styled';
+import { Button, Center, ListElement, Ul, Main, ProductImage } from './Category.styled';
 import Image from 'next/Image'
+import { useRouter } from 'next/router';
 
 export function Category(props) {
-    
+    const route = useRouter()
 
     return (
         <Main className='container'>
@@ -89,9 +90,9 @@ export function Category(props) {
 
             </div>
             
-            <div className='col-2'>
-                <Image src="/product/t_shirt.jpg" width={308} height={508} style={{objectFit: "cover"}}/>
-            </div>
+            <ProductImage className='col-3'>
+     <Image src="/category/shirt.svg" width={308} height={508} onClick={()=>route.push('/')}/>
+            </ProductImage>
         </Main>
     )
 }
