@@ -129,6 +129,23 @@ align-items: center;
 flex-direction: column;
 
 `
+export const TinyDiv2 = styled.div`
+width: 97px;
+height: 50px;
+background: #FFFFFF;
+border: 1px solid #E9E9E9;
+border-radius: 4px;
+margin-top: 80px;
+margin-left: 15px;
+display: flex;
+color: rgba(166, 166, 166, 1);
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+
+
+`
 export const CargoText = styled.div`
 font-family: 'Source Sans Pro', sans-serif;
 font-style: normal;
@@ -150,11 +167,11 @@ color: #DDE6EF;
 
 `
 export const Container = styled.div`
-width: 593px;
+width: 503px;
 height: 155px;
-border: 1px solid green;
+
 display: flex;
-padding-top: 40px;
+margin-top: 40px;
 `
 export const Size = styled.span`
 font-family: 'Source Sans Pro', sans-serif;
@@ -163,6 +180,7 @@ font-weight: 600;
 font-size: 14px;
 line-height: 18px;
 color: #000000;
+margin-bottom: 20px;
 
 `
 export const SizeTable = styled.span`
@@ -194,23 +212,24 @@ line-height: 15px;
 
 
 `
-export const Increase = styled.div`
+export const Increase = styled.button`
 width: 36.4px;
 height: 30px;
-background: #FAF9F9;
+background: rgba(255, 255, 255, 1);
 border: 0.909909px solid #E6E6E6;
 transform: matrix(1, 0, 0, -1, 0, 0);
 text-align: center;
 
 
+
 `
 export const ItemCount = styled.span`
-width: 65.74px;
+width: 180px;
 height: 40px;
 background: #FAF9F9;
 border: 1px solid #E6E6E6;
-padding-left:  15px;
-padding-right: 15px;
+padding-left:  55px;
+padding-right: 55px;
 padding-top: 3px;
 padding-bottom: 3px;
 `
@@ -218,6 +237,7 @@ export const Div = styled.div`
 display: flex;
 flex-direction: column;
 width: 300px;
+padding-right: 20px;
 `
 export const SpanKeeper = styled.div`
 display: flex;
@@ -260,5 +280,13 @@ line-height: 20px;
 text-align: center;
 padding-top: 15px;
 color: #FFFFFF;
+
+`
+
+export const ArrowDiv = styled.div`
+
+display: block;
+margin-left: 45px;
+
 
 `

@@ -1,12 +1,13 @@
 import React from 'react'
 import { ImageHolder, MenuDiv, MenuParagraph, MenuSidebar } from './Menu.styled'
 import Image from 'next/Image'
+import { useRouter } from 'next/router'
 export function Menu(props) {
-    
+  const route = useRouter()  
 
     return (
         <MenuSidebar>
-            <MenuDiv>
+            <MenuDiv onClick={()=>route.push('/CategoryPage')}>
                 <ImageHolder>
                 <Image src="/Menu/makeUp.svg" width={13} height={24}/>
                 </ImageHolder>
@@ -15,7 +16,7 @@ export function Menu(props) {
                <Image src="/Menu/Arrow.svg" width={8} height={14}/>
                </ImageHolder>
             </MenuDiv>
-            <MenuDiv>
+            <MenuDiv  onClick={()=>route.push('/CategoryPage')}>
                 <ImageHolder>
                 <Image src="/Menu/shoe.svg" width={30} height={16}/>
                 </ImageHolder>
@@ -24,7 +25,7 @@ export function Menu(props) {
                <Image src="/Menu/Arrow.svg" width={8} height={14}/>
                </ImageHolder>
             </MenuDiv>
-            <MenuDiv>
+            <MenuDiv  onClick={()=>route.push('/CategoryPage')}>
                 <ImageHolder>
                 <Image src="/Menu/care.svg" width={24} height={23}/>
                 </ImageHolder>
@@ -42,7 +43,7 @@ export function Menu(props) {
                <Image src="/Menu/Arrow.svg" width={8} height={14}/>
                </ImageHolder>
             </MenuDiv>
-            <MenuDiv>
+            <MenuDiv  onClick={()=>route.push('/CategoryPage')}>
                 <ImageHolder>
                 <Image src="/Menu/toy.svg" width={24} height={23}/>
                 </ImageHolder>
@@ -52,7 +53,7 @@ export function Menu(props) {
                </ImageHolder>
             </MenuDiv>
             
-            <MenuDiv>
+            <MenuDiv  onClick={()=>route.push('/CategoryPage')}>
                 <ImageHolder>
                 <Image src="/Menu/Book.svg" width={18} height={24}/>
                 </ImageHolder>
@@ -61,7 +62,7 @@ export function Menu(props) {
                <Image src="/Menu/Arrow.svg" width={8} height={14}/>
                </ImageHolder>
             </MenuDiv>
-            <MenuDiv>
+            <MenuDiv  onClick={()=>route.push('/CategoryPage')}>
                 <ImageHolder>
                 <Image src="/Menu/house.svg" width={18} height={24}/>
                 </ImageHolder>
@@ -70,7 +71,7 @@ export function Menu(props) {
                <Image src="/Menu/Arrow.svg" width={8} height={14}/>
                </ImageHolder>
             </MenuDiv>
-            <MenuDiv>
+            <MenuDiv  onClick={()=>route.push('/CategoryPage')}>
                 <ImageHolder>
                 <Image src="/Menu/electronic.svg" width={28} height={27}/>
                 </ImageHolder>
@@ -79,7 +80,7 @@ export function Menu(props) {
                <Image src="/Menu/Arrow.svg" width={8} height={14}/>
                </ImageHolder>
             </MenuDiv>
-            <MenuDiv>
+            <MenuDiv  onClick={()=>route.push('/CategoryPage')}>
                 <ImageHolder>
                 <Image src="/Menu/Car.svg" width={31} height={20}/>
                 </ImageHolder>

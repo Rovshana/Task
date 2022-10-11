@@ -1,6 +1,10 @@
 import React from "react";
 import Image from "next/Image";
 import Rating from "@mui/material/Rating";
+import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
+import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import {
   BigCenterElement,
   Brand,
@@ -30,7 +34,9 @@ import {
   ItemCount,
   Box,
   Container,
-  SpanKeeper
+  SpanKeeper,
+  TinyDiv2,
+  ArrowDiv
 } from "./ProductDetail.styled";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 function ProductDetail(props) {
@@ -38,10 +44,27 @@ function ProductDetail(props) {
 
   return (
     <div className="container d-flex">
-      <div className="col-2">tiny</div>
+      <div className="col-2">
+        <ArrowDiv>
+        <KeyboardArrowUpOutlinedIcon/>
+        </ArrowDiv>
+        <div>
+          <Image src="/product/backCoat.webp" width={121} height={171} alt="..."/>
+        </div>
+        <div>
+          <Image src="/product/sideCoat.webp" width={121} height={171} alt="..."/>
+        </div>
+        <div>
+          <Image src="/product/backCoat.webp" width={121} height={171} alt="..."/>
+        </div>
+        <ArrowDiv>
+       <KeyboardArrowDownOutlinedIcon/>
+      </ArrowDiv>
+      </div>
       <div className="col-4">
         <Image src="/product/coat.jpg" width={400} height={600} />
       </div>
+     
       <div className="col-6">
         <TopElement>
           <div>
@@ -97,6 +120,7 @@ function ProductDetail(props) {
           </TinyDiv>
         
         </Center>
+        <Center>
         <Container>
           <Div>
             <SpanKeeper>
@@ -105,12 +129,27 @@ function ProductDetail(props) {
             </SpanKeeper>
             <p>Choose: size</p>
           </Div>
-          <div>Second</div>
+      <Div>
+            <Size>Adet</Size>
+            <div>
+            <Increase>-</Increase>
+            <ItemCount>1</ItemCount>
+            <Increase>+</Increase>
+            </div>
+
+
+          </Div>
+         
         </Container>
        
+        <TinyDiv2>
+<NotificationsActiveOutlinedIcon style={{color: "rgba(166, 166, 166, 1)"}}/>
+          </TinyDiv2>
+          <TinyDiv2>
+          <FavoriteBorderOutlinedIcon style={{color: "rgba(166, 166, 166, 1)"}}/>
+          </TinyDiv2>
 
-
-      
+          </Center>
         {/* <Buttons>
 
           <Button1>Hemen Al</Button1>
