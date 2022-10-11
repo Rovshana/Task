@@ -168,7 +168,7 @@ color: #DDE6EF;
 `
 export const Container = styled.div`
 width: 503px;
-height: 155px;
+height: 115px;
 
 display: flex;
 margin-top: 40px;
@@ -246,7 +246,7 @@ justify-content: space-between;
 export const Buttons = styled.div`
 display: flex;
 flex-direction: row;
-margin-top: 45px;
+margin-top: 15px;
 margin-bottom: 35px;
 `
 export const Button1 = styled.div`

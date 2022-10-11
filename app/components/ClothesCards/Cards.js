@@ -39,7 +39,7 @@ const getData = ()=>{
   console.log(res.data.clothes)
   setData(res.data.clothes)
  })
- console.log(data, "data")
+ console.log(data, "data mehsul")
 }
 
   return (
@@ -47,7 +47,7 @@ const getData = ()=>{
       {
           data.map((item, index)=>(
            
-            <CardContainer onClick={()=>route.push('/ProductPage')}>
+            <CardContainer onClick={()=>route.push(`/ProductPage/${item.id}`)}>
 
         <div style={{position:"relative"}}>
           <Image src={item.photo} width={281} height={420} />

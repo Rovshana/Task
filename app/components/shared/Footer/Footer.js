@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, FooterTopConent, FooterTopContainer, Input, SmallContainer, Span, LastItems, SocialSpan, Paragraph, FooterItem } from './Footer.styled'
+import { Button, FooterTopConent, FooterTopContainer, Input, SmallContainer, Span, LastItems, SocialSpan, Paragraph, FooterItem, IconInfo } from './Footer.styled'
 import Image from 'next/Image'
 
 
@@ -32,20 +32,24 @@ import Image from 'next/Image'
             <div>
                 <Span>Sosyal Medya</Span>
                 <FooterItem>
-                    <Image src='/Footer/fb.png' width={25} height={25} style={{borderRadius: "50%", marginRight: "5px"}}/>
+                    <Image src='/Footer/fb.png' width={25} height={25} style={{borderRadius: "50%"}}/>
+                   <IconInfo>
                    Facebook
+                   </IconInfo>
                 </FooterItem>
                 <FooterItem>
                 <Image src='/Footer/insta.svg' width={18} height={18} style={{borderRadius: "50%",marginRight: "5px" }}/>
+                    <IconInfo>
                     Instagram
+                    </IconInfo>
                 </FooterItem>
                 <FooterItem>
                 <Image src='/Footer/Twitter.png' width={26} height={26} style={{marginRight: "5px"}}/>
-                    Twitter
+                    <IconInfo>Twitter</IconInfo>
                 </FooterItem>
                 <FooterItem>
                 <Image src='/Footer/youtubee.png' width={36} height={36} style={{borderRadius: "50%", marginRight: "5px"}}/>
-                    You tube
+                    <IconInfo>You tube</IconInfo>
                 </FooterItem>
     
             </div>

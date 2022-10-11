@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/Image";
 import Rating from "@mui/material/Rating";
 import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
@@ -38,8 +38,19 @@ import {
   TinyDiv2,
   ArrowDiv
 } from "./ProductDetail.styled";
+import { clothesApi } from "../../Api/ClothesCards";
+import { useRouter } from "next/router";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 function ProductDetail(props) {
+const [choosenProduct,setChoosenProduct] = useState({})
+const route = useRouter()
+  useEffect(() => {
+    clothesApi.then(res=>{
+      const product = res.data.clothes.filter(item=>item.id === route.query.id)
+
+      setChoosenProduct(product[0])
+    })
+  }, [])
   const [value, setValue] = React.useState(5);
 
   return (
@@ -62,19 +73,19 @@ function ProductDetail(props) {
       </ArrowDiv>
       </div>
       <div className="col-4">
-        <Image src="/product/coat.jpg" width={400} height={600} />
+        <Image src={choosenProduct.photo} width={400} height={600} />
       </div>
      
       <div className="col-6">
         <TopElement>
           <div>
-            <Brand>Koton </Brand>
-            <ProductName>Kadın Antrasit Kaban 0KAK0</ProductName>
+            <Brand>{choosenProduct.brand} </Brand>
+            <ProductName>{choosenProduct.description}</ProductName>
           </div>
           <Id>6697EW</Id>
           <div>
             <Seller>Satici:</Seller>
-            <Brand2>Koton</Brand2>
+            <Brand2>{choosenProduct.brand}</Brand2>
             <RateNum>9.5</RateNum>
           </div>
           <div>
@@ -88,8 +99,8 @@ function ProductDetail(props) {
             />
           </div>
           <div>
-            <OldPrice>99,99TL</OldPrice>
-            <NewPrice>59,99TL</NewPrice>
+            <OldPrice>{choosenProduct.oldPrice} Tl</OldPrice>
+            <NewPrice>{choosenProduct.NewPrice}TL</NewPrice>
           </div>
         </TopElement>
         <Center>
@@ -150,11 +161,11 @@ function ProductDetail(props) {
           </TinyDiv2>
 
           </Center>
-        {/* <Buttons>
+        <Buttons>
 
           <Button1>Hemen Al</Button1>
           <Button2>Sepete ekle</Button2>
-        </Buttons> */}
+        </Buttons>
 
        
       </div>

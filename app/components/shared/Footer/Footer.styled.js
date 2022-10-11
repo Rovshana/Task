@@ -29,7 +29,10 @@ margin-right: 46px;
 `
 
 // FooterBottom ends
+export const IconInfo = styled.span`
+padding-left: 10px;
 
+`
 export const FooterTopContainer = styled.div`
  width: 100%;
  height: 236px;
