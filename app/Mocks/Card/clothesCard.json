@@ -5,7 +5,11 @@
       "NewPrice": "65",
       "brand": "Koton",
       "color": ["blue", "black"],
-    
+      "others": [
+        "https://n.nordstrommedia.com/id/sr3/6fa79269-cacc-4774-9968-100a18a96520.jpeg?h=365&w=240&dpr=2",
+        "https://n.nordstrommedia.com/id/sr3/6fa79269-cacc-4774-9968-100a18a96520.jpeg?h=365&w=240&dpr=2",
+        "https://www.falconeri.com/dw/image/v2/BCXQ_PRD/on/demandware.static/-/Sites-FAL_EC_COM/default/dwdde51cb8/images/DML416R_wear_9107_D1.jpg?sw=600&sfrm=png&bgcolor=f4f4f4"
+      ],
  "photo": "https://n.nordstrommedia.com/id/sr3/6fa79269-cacc-4774-9968-100a18a96520.jpeg?h=365&w=240&dpr=2"
  
 }, 
@@ -15,7 +19,11 @@
         "NewPrice": "55",
         "brand": "Colins",
         "color": ["orange", "pink"],
-        
+        "others": [
+            "https://i.pinimg.com/originals/b5/7b/00/b57b00e8bd072de3670a59f3b8724886.jpg",
+            "https://i.pinimg.com/originals/b5/7b/00/b57b00e8bd072de3670a59f3b8724886.jpg",
+           "http://www.5in1canpolat.com/Uploads/UrunResimleri/buyuk/renkli-seritli-goofy-baskili-sweatshirt-565b.jpg" 
+        ],
         "photo": "https://i.pinimg.com/originals/b5/7b/00/b57b00e8bd072de3670a59f3b8724886.jpg"
     },
     {"id": "3",
@@ -24,7 +32,12 @@
        "oldPrice": "45",
        "brand": "Trendyolmilla",
        "color": ["crimson", "black"],
-       "photo": "https://cdn.modamizbir.com/Uploads/UrunResimleri/buyuk/beyaz-cepli-bayan-gomlek-12507b-824d.jpg"
+       "photo": "https://cdn.modamizbir.com/Uploads/UrunResimleri/buyuk/beyaz-cepli-bayan-gomlek-12507b-824d.jpg",
+       "others": [
+        "https://cdn.modamizbir.com/Uploads/UrunResimleri/buyuk/sirt-nakisli-beyaz-bayan-gomlek-12096b-4953.jpg",
+        "https://cdn.modamizbir.com/Uploads/UrunResimleri/buyuk/beyaz-cepli-bayan-gomlek-12507b-824d.jpg",
+        "https://cdn.modamizbir.com/Uploads/UrunResimleri/buyuk/beyaz-cepli-bayan-gomlek-12507b-824d.jpg"
+       ]
 
 
 
@@ -35,7 +48,15 @@
         "oldPrice": "70",
         "brand": "DeFacto",
         "color": ["brown", "yellow"],
-        "photo": "https://productimages.hepsiburada.net/s/196/600-800/110000164504606.jpg"
+        "photo": "https://productimages.hepsiburada.net/s/196/600-800/110000164504606.jpg",
+        "others": [
+            "https://static.elbisebul.com/products/16173160029614-happiness-ist-kirmizi-cicekli-yirtmacli-viskon-midi-etek.jpg",
+            "https://productimages.hepsiburada.net/s/196/600-800/110000164504606.jpg",
+
+            "https://productimages.hepsiburada.net/s/196/600-800/110000164504606.jpg"
+            
+
+        ]
 
     },
     {"id": "5",
@@ -44,17 +65,25 @@
         "NewPrice": "320",
         "brand": "Denim",
         "color": ["black", "blue"],
-        "photo": "https://f-lwr-l.mncdn.com/livephotos/W22HZB26K/W22HZB26K396_3.jpg"
-    
-    },
+        "photo": "https://f-lwr-l.mncdn.com/livephotos/W22HZB26K/W22HZB26K396_3.jpg",
+        "others": [
+         "https://f-lwr-l.mncdn.com/livephotos/W2463841E/W2463841E41E_5.jpg",
+            "https://f-lwr-l.mncdn.com/livephotos/W2463841E/W2463841E41E_5.jpg",
+            "https://f-lwr-l.mncdn.com/livephotos/W2463841E/W2463841E41E_5.jpg"
+        ]
+        },
     {"id": "6",
         "description": "DeFacto.Bayan iki tarafli Yelek",
         "NewPrice": "99",
         "oldPrice": "144",
         "brand": "DeFacto",
         "color": ["gray", "red"],
-        "photo": "https://cdn.modamizbir.com/Uploads/UrunResimleri/buyuk/siyah-bej-cift-tarafli-dolumlu-sisme-yelek-129424-2021936269.jpg"
-    }
+        "photo": "https://cdn.modamizbir.com/Uploads/UrunResimleri/thumb/siyah-bej-cift-tarafli-dolumlu-sisme-yelek-129424-2021936269.jpg",
+        "others": ["https://cdn.modamizbir.com/Uploads/UrunResimleri/buyuk/siyah-bej-cift-tarafli-dolumlu-sisme-yelek-129424-350132454.jpg",
+    "https://cdn.modamizbir.com/Uploads/UrunResimleri/buyuk/siyah-bej-cift-tarafli-dolumlu-sisme-yelek-129424-132964148.jpg", 
+"https://cdn.modamizbir.com/Uploads/UrunResimleri/buyuk/siyah-bej-cift-tarafli-dolumlu-sisme-yelek-129424-1222149989.jpg"]
+   
+}
 
 
 ]

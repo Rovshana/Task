@@ -14,15 +14,17 @@ const initialState = {
         addProducts: (state, action)=>{
             
             state.products.push(action.payload.product)
-            state.total += action.payload.price
+            // state.total += action.payload.price
 
         }, 
         addCard: (state, action)=>{
           state.card = [...state.card, action.payload]
 
         }, 
-        addBasket: (state, action)=>{
-          state.quantity += 1;
+        setAddBasket: (state, action)=>{
+          console.log(action.payload);
+          // state.quantity += 1;
+          state.products.push(action.payload)
         },
         
        
@@ -30,5 +32,5 @@ const initialState = {
     },
   })
 
-  export const { addProducts, addBasket, addCard } = CardSlice.actions;
+  export const { addProducts, setAddBasket, addCard } = CardSlice.actions;
   export default CardSlice.reducer

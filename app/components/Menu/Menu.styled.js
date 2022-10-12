@@ -8,7 +8,9 @@ box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
 border-radius: 8px;
 padding-top: 25px;
 z-index: 1;
-
+position: absolute;
+top: 100px;
+margin-top: 60px;
 `
 
 export const MenuParagraph = styled.p`

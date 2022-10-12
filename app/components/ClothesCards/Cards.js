@@ -24,22 +24,23 @@ import Favorite from "@mui/icons-material/Favorite";
 import Rating from "@mui/material/Rating";
 import { clothesApi } from "../../Api/ClothesCards";
 import { useRouter } from "next/router";
+import { useDispatch, useSelector } from "react-redux";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 function Cards(props) {
   const [value, setValue] = React.useState(5);
   const [data, setData] = useState([])
+  const [loading, setLoading] = useState(false)
   const route = useRouter()
 useEffect(() => {
   getData()
 }, [])
 
+
 const getData = ()=>{
  clothesApi.then(res=>{
-  console.log(res.data.clothes)
   setData(res.data.clothes)
  })
- console.log(data, "data mehsul")
 }
 
   return (

@@ -1,3 +1,4 @@
+import { Butik } from "../components/Butik/Butik";
 import { Category } from "../components/categories/Category";
 import { Menu } from "../components/Menu/Menu";
 import Footer from "../components/shared/Footer/Footer";
@@ -13,14 +14,10 @@ import ProductContainer from "../Features/ProductContainer/ProductContainer";
 export default function Home() {
   return (
     <div >
-      {/* <BasketConatiner/> */}
-      
+    
+      {/* <Butik/> */}
      <HomeContainer/>
-      {/* <ProductContainer/> */}
-     {/* <Category/> */}
-     {/* <SubMenu/>   */}
-     {/* <Menu/> */}
-     
+      
     </div>
   )
 }

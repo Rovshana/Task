@@ -40,9 +40,20 @@ import {
 } from "./ProductDetail.styled";
 import { clothesApi } from "../../Api/ClothesCards";
 import { useRouter } from "next/router";
+import { useDispatch, useSelector } from "react-redux";
+import {setAddBasket} from "../../store/slices/cardSlice"
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 function ProductDetail(props) {
+
 const [choosenProduct,setChoosenProduct] = useState({})
+// add basket
+const dispatch = useDispatch()
+const state = useSelector(state=>state)
+console.log(state);
+const addBasket = (item)=>{
+  dispatch(setAddBasket(item))
+}
+//finish add basket
 const route = useRouter()
   useEffect(() => {
     clothesApi.then(res=>{
@@ -52,40 +63,39 @@ const route = useRouter()
     })
   }, [])
   const [value, setValue] = React.useState(5);
-
   return (
     <div className="container d-flex">
       <div className="col-2">
         <ArrowDiv>
         <KeyboardArrowUpOutlinedIcon/>
         </ArrowDiv>
-        <div>
-          <Image src="/product/backCoat.webp" width={121} height={171} alt="..."/>
-        </div>
-        <div>
-          <Image src="/product/sideCoat.webp" width={121} height={171} alt="..."/>
-        </div>
-        <div>
-          <Image src="/product/backCoat.webp" width={121} height={171} alt="..."/>
-        </div>
+        {
+          choosenProduct?.others?.map((item, index)=>(
+            <div>
+            <Image src={item} width={121} height={171} alt="..."/>
+          </div>
+          ))
+        }
+       
+  
         <ArrowDiv>
        <KeyboardArrowDownOutlinedIcon/>
       </ArrowDiv>
       </div>
       <div className="col-4">
-        <Image src={choosenProduct.photo} width={400} height={600} />
+        <Image src={choosenProduct?.photo} width={400} height={600} />
       </div>
      
       <div className="col-6">
         <TopElement>
           <div>
-            <Brand>{choosenProduct.brand} </Brand>
-            <ProductName>{choosenProduct.description}</ProductName>
+            <Brand>{choosenProduct?.brand} </Brand>
+            <ProductName>{choosenProduct?.description}</ProductName>
           </div>
           <Id>6697EW</Id>
           <div>
             <Seller>Satici:</Seller>
-            <Brand2>{choosenProduct.brand}</Brand2>
+            <Brand2>{choosenProduct?.brand}</Brand2>
             <RateNum>9.5</RateNum>
           </div>
           <div>
@@ -99,8 +109,8 @@ const route = useRouter()
             />
           </div>
           <div>
-            <OldPrice>{choosenProduct.oldPrice} Tl</OldPrice>
-            <NewPrice>{choosenProduct.NewPrice}TL</NewPrice>
+            <OldPrice>{choosenProduct?.oldPrice} Tl</OldPrice>
+            <NewPrice>{choosenProduct?.NewPrice}TL</NewPrice>
           </div>
         </TopElement>
         <Center>
@@ -164,7 +174,7 @@ const route = useRouter()
         <Buttons>
 
           <Button1>Hemen Al</Button1>
-          <Button2>Sepete ekle</Button2>
+          <Button2  onClick={()=>addBasket(choosenProduct)}>Sepete ekle</Button2>
         </Buttons>
 
        

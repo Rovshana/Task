@@ -10,6 +10,7 @@ import {Menu} from '../../Menu/Menu'
 export  function HeaderCatagory(props) {
     const  [show, setShow] = useState(false)
     const [modal, setModal] = useState(false)
+    const route = useRouter()
 const changeShow = ()=>{
     setShow(!show)
 }
