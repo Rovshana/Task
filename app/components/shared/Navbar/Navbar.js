@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
     return (
         <NavBarContainer>
             <div>
-                <img src="/Navbar_Svgs/redLogi.svg"/>
+                <img src="/Navbar_Svgs/redLogi.svg"  onClick={()=>route.push('/')} />
             </div>
             <Ul>
                 <ListItem>Magazani yarat</ListItem>

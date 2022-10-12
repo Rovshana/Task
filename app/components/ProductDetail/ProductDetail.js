@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/Image";
 import Rating from "@mui/material/Rating";
-import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
-import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
-import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
+import NotificationsActiveOutlinedIcon from "@mui/icons-material/NotificationsActiveOutlined";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
+import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import {
   BigCenterElement,
   Brand,
@@ -36,56 +36,70 @@ import {
   Container,
   SpanKeeper,
   TinyDiv2,
-  ArrowDiv
+  ArrowDiv,
 } from "./ProductDetail.styled";
 import { clothesApi } from "../../Api/ClothesCards";
 import { useRouter } from "next/router";
 import { useDispatch, useSelector } from "react-redux";
-import {setAddBasket} from "../../store/slices/cardSlice"
+import { setAddBasket } from "../../store/slices/cardSlice";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 function ProductDetail(props) {
-
-const [choosenProduct,setChoosenProduct] = useState({})
-// add basket
-const dispatch = useDispatch()
-const state = useSelector(state=>state)
-console.log(state);
-const addBasket = (item)=>{
-  dispatch(setAddBasket(item))
-}
-//finish add basket
-const route = useRouter()
+  const [choosenProduct, setChoosenProduct] = useState({});
+  // add basket
+  const dispatch = useDispatch();
+  const state = useSelector((state) => state);
+  console.log(state);
+  const addBasket = () => {
+    if (state.card.products.length !== 0) {
+      for (const item of state.card.products) {
+        if (item.id !== choosenProduct.id) {
+          let newObj = {
+            count: 1,
+            ...choosenProduct,
+          };
+          dispatch(setAddBasket(newObj));
+        }
+      }
+    } else {
+      let newObj = {
+        count: 1,
+        ...choosenProduct,
+      };
+      dispatch(setAddBasket(newObj));
+    }
+  };
+  //finish add basket
+  const route = useRouter();
   useEffect(() => {
-    clothesApi.then(res=>{
-      const product = res.data.clothes.filter(item=>item.id === route.query.id)
+    clothesApi.then((res) => {
+      const product = res.data.clothes.filter(
+        (item) => item.id === route.query.id
+      );
 
-      setChoosenProduct(product[0])
-    })
-  }, [])
+      setChoosenProduct(product[0]);
+    });
+  }, []);
   const [value, setValue] = React.useState(5);
   return (
     <div className="container d-flex">
       <div className="col-2">
         <ArrowDiv>
-        <KeyboardArrowUpOutlinedIcon/>
+          <KeyboardArrowUpOutlinedIcon />
         </ArrowDiv>
-        {
-          choosenProduct?.others?.map((item, index)=>(
-            <div>
-            <Image src={item} width={121} height={171} alt="..."/>
+        {choosenProduct?.others?.map((item, index) => (
+          <div>
+            <Image src={item} width={121} height={171} alt="..." />
           </div>
-          ))
-        }
-       
-  
+        ))}
+
         <ArrowDiv>
-       <KeyboardArrowDownOutlinedIcon/>
-      </ArrowDiv>
+          <KeyboardArrowDownOutlinedIcon />
+        </ArrowDiv>
       </div>
       <div className="col-4">
         <Image src={choosenProduct?.photo} width={400} height={600} />
       </div>
-     
+
       <div className="col-6">
         <TopElement>
           <div>
@@ -123,61 +137,55 @@ const route = useRouter()
                 height={85}
                 style={{ objectFit: "cover", marginRight: "15px" }}
               />
-               </div>
+            </div>
           </BigCenterElement>
           <TinyDiv>
             <div>
-            <Image src="/product/truck.svg" width={50} height={50} alt=".."/>
+              <Image src="/product/truck.svg" width={50} height={50} alt=".." />
               <CargoText>KARGO BEDAVA</CargoText>
-              
             </div>
           </TinyDiv>
           <TinyDiv>
             <div>
-            <Image src="/product/sale.svg" width={50} height={50} alt=".."/>
+              <Image src="/product/sale.svg" width={50} height={50} alt=".." />
               <SaleText>40% İNDİRİM</SaleText>
-              
             </div>
           </TinyDiv>
-        
         </Center>
         <Center>
-        <Container>
-          <Div>
-            <SpanKeeper>
-            <Size>Beden</Size>
-            <SizeTable>Beden Tablosu</SizeTable>
-            </SpanKeeper>
-            <p>Choose: size</p>
-          </Div>
-      <Div>
-            <Size>Adet</Size>
-            <div>
-            <Increase>-</Increase>
-            <ItemCount>1</ItemCount>
-            <Increase>+</Increase>
-            </div>
+          <Container>
+            <Div>
+              <SpanKeeper>
+                <Size>Beden</Size>
+                <SizeTable>Beden Tablosu</SizeTable>
+              </SpanKeeper>
+              <p>Choose: size</p>
+            </Div>
+            <Div>
+              <Size>Adet</Size>
+              <div>
+                <Increase>-</Increase>
+                <ItemCount>1</ItemCount>
+                <Increase>+</Increase>
+              </div>
+            </Div>
+          </Container>
 
-
-          </Div>
-         
-        </Container>
-       
-        <TinyDiv2>
-<NotificationsActiveOutlinedIcon style={{color: "rgba(166, 166, 166, 1)"}}/>
+          <TinyDiv2>
+            <NotificationsActiveOutlinedIcon
+              style={{ color: "rgba(166, 166, 166, 1)" }}
+            />
           </TinyDiv2>
           <TinyDiv2>
-          <FavoriteBorderOutlinedIcon style={{color: "rgba(166, 166, 166, 1)"}}/>
+            <FavoriteBorderOutlinedIcon
+              style={{ color: "rgba(166, 166, 166, 1)" }}
+            />
           </TinyDiv2>
-
-          </Center>
+        </Center>
         <Buttons>
-
           <Button1>Hemen Al</Button1>
-          <Button2  onClick={()=>addBasket(choosenProduct)}>Sepete ekle</Button2>
+          <Button2 onClick={() => addBasket()}>Sepete ekle</Button2>
         </Buttons>
-
-       
       </div>
     </div>
   );

@@ -1,9 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ClearIcon from '@mui/icons-material/Clear';
 import Image from 'next/Image'
 import {Top, Center, Container, Span1, Span2, Brand, Detail, Price, Btn, ItemCount, YourBasket, Line, TotalPriceContainer, Total, TotalText, TotalPrice, Button} from './Basket.styled.js'
+import { useDispatch, useSelector } from 'react-redux';
+import {setIncrementCount} from "../../store/slices/cardSlice.js"
 export function RightBasket(props) {
-    
+    const dispatch = useDispatch()
+    const [resultPrice,setResultPrice] = useState(0)
+    const state = useSelector(state=>state)
+    useEffect(() => {
+        let sum = 0
+        state.card.products?.map(item=>{
+           sum += +item.NewPrice
+        })
+
+        setResultPrice(sum)
+
+    },[state])
+    const incrementBasketProduct = (id)=>{
+      
+    }
+
+    const decrementBasketProduct = (id)=>{
+
+    }
+    console.log(state);
 
     return (
         <Container>
@@ -13,26 +34,29 @@ export function RightBasket(props) {
            <div className="right" style={{position:"relative"}}>
             <Top>
                 <div>
-            <Span1>ÜRÜN SAYI:</Span1> <Span2>6</Span2> 
+            <Span1>ÜRÜN SAYI:</Span1> <Span2>{state.card.products.length}</Span2> 
             </div>
             <div>
               <ClearIcon  /> 
          </div>  
             </Top>
-            <div>
+            {
+                state.card.products?.map(product =>(
+                    <>
+                     <div>
                 <YourBasket>
                     <div>
-                        <Image src='/test.jpg' width={67} height={101}alt=".."/>
+                        <Image src={product.photo} width={67} height={101}alt=".."/>
                     </div>
                     <div>
-                        <Brand>Tonny Black</Brand>
+                        <Brand>{product.brand}</Brand>
 
-                        <Detail> Beyaz Cilt Kadın Sneaker BLS-Q-1 </Detail>
-                        <Price>110,49 TL</Price>
+                        <Detail> {product.description} </Detail>
+                        <Price>{product.NewPrice} TL</Price>
                         <div>
-                            <Btn>-</Btn>
-                            <ItemCount>2</ItemCount>
-                            <Btn>+</Btn>
+                            <Btn onClick={()=>decrementBasketProduct(product.id)}>-</Btn>
+                            <ItemCount>{product.count}</ItemCount>
+                            <Btn onClick={()=>incrementBasketProduct(product.id)}>+</Btn>
                         </div>
                        
 
@@ -44,85 +68,15 @@ export function RightBasket(props) {
                 </YourBasket>
                 <Line></Line>
             </div>
-            <div>
-                <YourBasket>
-                    <div>
-                        <Image src='/test.jpg' width={67} height={101}alt=".."/>
-                    </div>
-                    <div>
-                        <Brand>Tonny Black</Brand>
-
-                        <Detail> Beyaz Cilt Kadın Sneaker BLS-Q-1 </Detail>
-                        <Price>110,49 TL</Price>
-                        <div>
-                            <Btn>-</Btn>
-                            <ItemCount>2</ItemCount>
-                            <Btn>+</Btn>
-                        </div>
-                       
-
-
-                    </div>
-                    <div>
-                            <ClearIcon style={{color: "gray"}}/>
-                        </div>
-                </YourBasket>
-                <Line></Line>
-            </div>
-            <div>
-                <YourBasket>
-                    <div>
-                        <Image src='/test.jpg' width={67} height={101}alt=".."/>
-                    </div>
-                    <div>
-                        <Brand>Tonny Black</Brand>
-
-                        <Detail> Beyaz Cilt Kadın Sneaker BLS-Q-1 </Detail>
-                        <Price>110,49 TL</Price>
-                        <div>
-                            <Btn>-</Btn>
-                            <ItemCount>2</ItemCount>
-                            <Btn>+</Btn>
-                        </div>
-                       
-
-
-                    </div>
-                    <div>
-                            <ClearIcon style={{color: "gray"}}/>
-                        </div>
-                </YourBasket>
-                <Line></Line>
-            </div>
-            <div>
-                <YourBasket>
-                    <div>
-                        <Image src='/test.jpg' width={67} height={101}alt=".."/>
-                    </div>
-                    <div>
-                        <Brand>Tonny Black</Brand>
-
-                        <Detail> Beyaz Cilt Kadın Sneaker BLS-Q-1 </Detail>
-                        <Price>110,49 TL</Price>
-                        <div>
-                            <Btn>-</Btn>
-                            <ItemCount>2</ItemCount>
-                            <Btn>+</Btn>
-                        </div>
-                       
-
-
-                    </div>
-                    <div>
-                            <ClearIcon style={{color: "gray"}}/>
-                        </div>
-                </YourBasket>
-                <Line></Line>
-            </div>
+                    </>
+                ))
+            }
+           
+       
         <TotalPriceContainer >
             <Total>
                 <TotalText>Toplam</TotalText>
-                <TotalPrice>482,98 TL</TotalPrice>
+                <TotalPrice>{resultPrice} TL</TotalPrice>
             </Total>
             <div>
                 <Button>SEPETE GİT</Button>

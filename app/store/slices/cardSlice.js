@@ -11,19 +11,12 @@ const initialState = {
     name: 'counter',
     initialState,
     reducers: {
-        addProducts: (state, action)=>{
-            
-            state.products.push(action.payload.product)
-            // state.total += action.payload.price
+        setIncrementCount: (state, action)=>{
+           state.total = action.payload
 
         }, 
-        addCard: (state, action)=>{
-          state.card = [...state.card, action.payload]
-
-        }, 
+       
         setAddBasket: (state, action)=>{
-          console.log(action.payload);
-          // state.quantity += 1;
           state.products.push(action.payload)
         },
         
@@ -32,5 +25,5 @@ const initialState = {
     },
   })
 
-  export const { addProducts, setAddBasket, addCard } = CardSlice.actions;
+  export const { addProducts, setAddBasket, addCard,setIncrementCount } = CardSlice.actions;
   export default CardSlice.reducer
