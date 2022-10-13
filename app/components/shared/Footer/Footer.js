@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, FooterTopConent, FooterTopContainer, Input, SmallContainer, Span, LastItems, SocialSpan, Paragraph, FooterItem, IconInfo } from './Footer.styled'
-import Image from 'next/Image'
+import Image from 'next/image'
 
 
  function Footer(props) {

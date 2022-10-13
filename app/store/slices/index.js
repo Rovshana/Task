@@ -1,4 +1,4 @@
-import CardSlice from "./CardSlice";
+import CardSlice from "./cardSlice";
 
 
 export const reducers = {

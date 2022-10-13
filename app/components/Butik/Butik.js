@@ -6,7 +6,7 @@ import { ArrowDiv, BigCenterElement, Brand, Brand2, Button1, Button2, Buttons, C
 import { Rating } from '@mui/material';
 import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
-import { Box, ButikTop, ColorBox, Delete, Main  } from '../Butik/Butik.styled';
+import { Box, ButikTop, ColorBox, Delete, Main  } from "./Butik.styled"
 import ClearOutlinedIcon from '@mui/icons-material/ClearOutlined';
 export function Butik(props) {
     const [value, setValue] = React.useState(5);

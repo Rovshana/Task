@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavBarContainer, SearchDiv, Button, Input, Ul, ListItem, RightCorner, Span, RightBox, SearchItem, BadgeDiv } from './Navbar.styled'
-import Image from 'next/Image'
+import Image from 'next/image'
 import { changeLanguage } from "i18next";
 import { useRouter } from 'next/router';
 import { useSelector } from 'react-redux';
