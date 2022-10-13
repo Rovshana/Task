@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/Image'
+import Image from 'next/image'
 import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import { ArrowDiv, BigCenterElement, Brand, Brand2, Button1, Button2, Buttons, CargoText, Center, Container, Div, Id, Increase, ItemCount, NewPrice, OldPrice, ProductColor, ProductName, RateNum, RatingNum, SaleText, Seller, Size, SizeTable, SpanKeeper, TinyDiv, TinyDiv2, TopElement, } from '../ProductDetail/ProductDetail.styled';

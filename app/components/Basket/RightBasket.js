@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ClearIcon from '@mui/icons-material/Clear';
-import Image from 'next/Image'
+import Image from 'next/image'
 import {Top, Center, Container, Span1, Span2, Brand, Detail, Price, Btn, ItemCount, YourBasket, Line, TotalPriceContainer, Total, TotalText, TotalPrice, Button} from './Basket.styled.js'
 import { useDispatch, useSelector } from 'react-redux';
 import {setIncrementCount} from "../../store/slices/cardSlice.js"
