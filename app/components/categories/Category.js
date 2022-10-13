@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Center, ListElement, Ul, Main, ProductImage } from './Category.styled';
-import Image from 'next/Image'
+import Image from 'next/image'
 import { useRouter } from 'next/router';
 
 export function Category(props) {

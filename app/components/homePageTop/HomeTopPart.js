@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { Button, Count, FirstELement, MainDiv, Number, Option, Select } from './HomePageTop.styled'
-import Image from 'next/Image'
+import Image from 'next/image'
 export function HomeTopPart(props) {
     const [order, setOrder] = useState("Sıralama seçin")
     const handleFilters = (e)=>{

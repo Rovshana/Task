@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImageHolder, MenuDiv, MenuParagraph, MenuSidebar } from './Menu.styled'
-import Image from 'next/Image'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 export function Menu(props) {
   const route = useRouter()  

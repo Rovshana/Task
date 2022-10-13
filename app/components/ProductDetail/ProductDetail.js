@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/Image";
+import Image from "next/image";
 import Rating from "@mui/material/Rating";
 import NotificationsActiveOutlinedIcon from "@mui/icons-material/NotificationsActiveOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
