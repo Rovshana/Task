@@ -7,6 +7,7 @@ justify-content: space-between;
  background: #FFFFFF;
  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.02);
  align-items: center;
+ position: relative;
 
 
 `
@@ -101,8 +102,13 @@ font-size: 14px;
 line-height: 18px;
 text-align: center;
 margin-top: 8px;
-
+cursor: pointer;
 color: #000000;
 
 `
+export const BadgeDiv = styled.div`
+position: absolute;
+top: -100;
+right: -50;
 
+`

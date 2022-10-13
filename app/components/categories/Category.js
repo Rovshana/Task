@@ -91,7 +91,7 @@ export function Category(props) {
             </div>
             
             <ProductImage className='col-3'>
-     <Image src="/category/shirt.svg" width={308} height={508} onClick={()=>route.push('/')}/>
+     <Image src="/category/shirt.svg" width={308} height={508} alt=" shirt" onClick={()=>route.push('/')}/>
             </ProductImage>
         </Main>
     )

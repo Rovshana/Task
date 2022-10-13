@@ -78,7 +78,7 @@ function ProductDetail(props) {
 
       setChoosenProduct(product[0]);
     });
-  }, []);
+  }, [route.query.id]);
   const [value, setValue] = React.useState(5);
   return (
     <div className="container d-flex">
@@ -87,7 +87,7 @@ function ProductDetail(props) {
           <KeyboardArrowUpOutlinedIcon />
         </ArrowDiv>
         {choosenProduct?.others?.map((item, index) => (
-          <div>
+          <div key={index}>
             <Image src={item} width={121} height={171} alt="..." />
           </div>
         ))}
@@ -97,7 +97,7 @@ function ProductDetail(props) {
         </ArrowDiv>
       </div>
       <div className="col-4">
-        <Image src={choosenProduct?.photo} width={400} height={600} />
+        <Image src={choosenProduct?.photo} width={400} height={600} alt=".." />
       </div>
 
       <div className="col-6">

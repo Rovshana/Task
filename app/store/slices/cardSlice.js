@@ -4,7 +4,8 @@ const initialState = {
     products: [],
     quantity: 0,
     total: 0,
-    card: []
+    card: [],
+    basketCount: 0
   }
 
   export const CardSlice = createSlice({
@@ -18,6 +19,7 @@ const initialState = {
        
         setAddBasket: (state, action)=>{
           state.products.push(action.payload)
+         state.quantity ++;
         },
         
        

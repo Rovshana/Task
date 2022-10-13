@@ -48,10 +48,10 @@ const getData = ()=>{
       {
           data.map((item, index)=>(
            
-            <CardContainer onClick={()=>route.push(`/ProductPage/${item.id}`)}>
+            <CardContainer key={index} onClick={()=>route.push(`/ProductPage/${item.id}`)}>
 
         <div style={{position:"relative"}}>
-          <Image src={item.photo} width={281} height={420} />
+          <Image src={item.photo} width={281} height={420} alt=".." />
           <FavIcon>
             <Checkbox
               {...label}
@@ -87,7 +87,7 @@ const getData = ()=>{
           <Size>XLL</Size>
         </Sizes>
         <Logo1>
-          <img src="/product/zoom.svg" />
+          <img src="/product/zoom.svg" alt=".." />
         </Logo1>
       </Content>
       

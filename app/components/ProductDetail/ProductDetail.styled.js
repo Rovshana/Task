@@ -280,6 +280,7 @@ line-height: 20px;
 text-align: center;
 padding-top: 15px;
 color: #FFFFFF;
+cursor: pointer;
 
 `
 

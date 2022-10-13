@@ -34,7 +34,7 @@ export function Butik(props) {
       </ArrowDiv>
       </div>
       <div className='col-4'>
-      <Image src="/product/coat.jpg" width={400} height={600} />
+      <Image src="/product/coat.jpg" width={400} height={600} alt='..' />
 
       </div>
       <div className='col-6'>
